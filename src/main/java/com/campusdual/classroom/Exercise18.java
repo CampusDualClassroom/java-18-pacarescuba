@@ -1,7 +1,5 @@
 package com.campusdual.classroom;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class Exercise18 {
 
 	public static void main(String[] args) {
