@@ -17,10 +17,10 @@ public class Exercise18 {
 	}
 
 	public static	void showInlineArray(int[] intArray) {
-		StringBuilder out = new StringBuilder();
+		StringBuilder stringBuilder = new StringBuilder();
 		for (int i = 0; i < intArray.length; i++) {
-			out.append((i + 1) + " ");
+			stringBuilder.append((i + 1)).append(" ");
 		}
-		System.out.println(out.toString().trim());
+		System.out.println(stringBuilder.toString().trim());
 	}
 }
