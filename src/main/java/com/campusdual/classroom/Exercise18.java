@@ -5,10 +5,10 @@ import com.campusdual.util.Utils;
 public class Exercise18 {
 
   public static void main(String[] args) {
-      showInlineArray(createAndInitializeArray(Utils.integer("Escriba la longitud del array: ")));
+    showInlineArray(createAndInitializeArray(Utils.integer("Escriba la longitud del array: ")));
   }
 
-  public static int[] createAndInitializeArray(int length){
+  public static int[] createAndInitializeArray(int length) {
     if (length < 0) {
       return new int[0];
     } else {
@@ -23,8 +23,11 @@ public class Exercise18 {
   public static void showInlineArray(int[] intArray) {
     StringBuilder stringBuilder = new StringBuilder();
     for (int i = 0; i < intArray.length; i++) {
-      stringBuilder.append((i + 1)).append(" ");
+      stringBuilder.append(i + 1);
+      if (i < intArray.length - 1) {
+        stringBuilder.append(" ");
+      }
     }
-    System.out.println(stringBuilder.toString().trim());
+    System.out.println(stringBuilder.toString());
   }
 }
